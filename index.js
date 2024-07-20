@@ -69,26 +69,23 @@ class Button extends Input {
 
 
 
-//IMPLEMENTÃO
-
-
-//Formulario
 
 
 let form = new Form(".formArea", "POST", "https://site.com.br")
-//email
+
+
 let email = new Input('email', 'Digite seu e-mail')
 email.type = 'text'
 email.required = true
 form.addItem(email)
 
-//senha
+
 let password = new Input("password", "Digite sua senha")
 password.type = 'password'
 form.addItem(password)
 
 
-//Button
+
 
 let button = new Button("Enviar")
 form.addItem(button)
